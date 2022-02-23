@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test"
+    android:screenOrientation="portrait"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/txtVelocidade"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="0.0 Km/h"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/buttonStop"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/txtAccel"
+        android:layout_width="230dp"
+        android:layout_height="105dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Accel/Gyro\n  x: \n  y: \n  z:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/lGreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <TextView
+        android:id="@+id/txtGPS"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:fontFamily="monospace"
+        android:text="GPS \n  lon: \n  lat:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/lGreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="Tempo: 0 (s)."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/lGreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/txtFile"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="monospace"
+        android:text="             "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/lGreen"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_ok"
+        android:fontFamily="monospace"
+        android:text="Iniciar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonStop"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:text="Parar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.965" />
+</android.support.constraint.ConstraintLayout>
